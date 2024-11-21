@@ -1,0 +1,6 @@
+.venv/
+animations/
+csv/
+__pycache__/
+main.ipynb
+.DS_Store
