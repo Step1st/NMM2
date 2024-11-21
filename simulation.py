@@ -117,7 +117,7 @@ def make_animation(h, tau, a, evolution):
         line.set_ydata(np.absolute(i))
         return line,
 
-    ani = animation.FuncAnimation(fig, animate, frames=evolution, interval=1, blit=True)
+    ani = animation.FuncAnimation(fig, animate, frames=evolution, blit=True)
 
     fps = args.fps if args.fps else int(1/tau)
     writer = animation.FFMpegWriter(fps=fps)
