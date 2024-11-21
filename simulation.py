@@ -13,8 +13,8 @@ parser.add_argument("-N", "--resolution", type=int, default=1000)
 parser.add_argument("-T", "--duration", type=float, default=1.0)
 parser.add_argument("-t", "--timestep", type=float, default=0.001)
 parser.add_argument("-p", "--parallel", action='store_true')
-parser.add_argument("-csv", action='store_true')
-parser.add_argument("-fps", type=int)
+parser.add_argument("--csv", action='store_true')
+parser.add_argument("--fps", type=int)
 
 args = parser.parse_args()
 
