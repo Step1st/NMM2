@@ -132,7 +132,7 @@ def run_simulation(a):
     evolution = compute_simulation(h, tau, N, T, a)
 
     if (args.csv):
-        np.savetxt(f"csv/csn_a_{a}.csv", evolution, delimiter=',')
+        np.savetxt(f"csv/csv_a_{str(a).replace('.','')}.csv", evolution, delimiter=',')
     else:
         make_animation(h, tau, a, evolution)
 
