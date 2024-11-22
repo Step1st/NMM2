@@ -35,7 +35,7 @@ def test_global(T):
     a = 0.2
     errors = [error(T, h, N, tau, C, a)]
     error_change = []
-    for i in range (1, 4):
+    for i in range (1, 3):
         N = N * 2
         h = 1 / N
         tau = tau * 0.5

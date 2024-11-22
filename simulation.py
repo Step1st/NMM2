@@ -16,7 +16,7 @@ parser.add_argument("-p", "--parallel", action='store_true')
 parser.add_argument("--csv", action='store_true')
 parser.add_argument("--fps", type=int)
 
-args = parser.parse_args()
+args = 0
 
 kapa_1, kapa_2 = 1, 1
 gamma_1, gamma_2 = 0, 0
@@ -138,9 +138,9 @@ def run_simulation(a):
 
 
 def main():
+    args = parser.parse_args()
     alpha = args.alpha
     if (args.parallel and len(alpha) > 1):
-        
         with multiprocessing.Pool(min(len(alpha), multiprocessing.cpu_count())) as pool:
             pool.map(run_simulation, alpha)
     else:

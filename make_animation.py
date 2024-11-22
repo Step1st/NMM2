@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-N", "--resolution", type=int, default=1000)
 parser.add_argument("-t", "--timestep", type=float, default=0.001)
 parser.add_argument("-f", "--file", nargs='*', type=argparse.FileType("r"), required=True)
-parser.add_argument("-o", "--out", default="animation/animation")
+parser.add_argument("-o", "--out", default="animations/animation")
 parser.add_argument("--fps", type=int)
 args = parser.parse_args()
 
